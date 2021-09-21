@@ -9,12 +9,18 @@
     income()
   })
   let balance: any
+  let c1: any
+  let c2: any
+  let c3: any
   let confirm = false
   let CNDSale = '0x841A63491027b3cffBDBC748AB98D8a7944eb197'
 
   async function income() {
     balance = await provider.getBalance(CNDSale)
     balance = balance / 1e18
+    c1 = (balance / 100) * 25
+    c2 = (balance / 100) * 38
+    c3 = (balance / 100) * 37
   }
 
   async function withdraw() {
@@ -27,6 +33,15 @@
 
 <div>
   미정산 매틱: {balance}
+</div>
+<div>
+  C1: {c1}
+</div>
+<div>
+  C2: {c2}
+</div>
+<div>
+  C3: {c3}
 </div>
 
 <div>내 지갑주소: {$myAddress}</div>
