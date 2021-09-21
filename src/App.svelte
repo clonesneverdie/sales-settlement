@@ -17,7 +17,7 @@
   }
 
   .btn {
-    width: 100%;
+    width: 20%;
     background-color: tomato;
     font-size: 20px;
     border-radius: 10px;
@@ -25,11 +25,23 @@
     padding: 10px;
     box-sizing: border-box;
     cursor: pointer;
+    margin-top: 10px;
   }
 
   @media screen and (max-width: 768px) {
     .wrap {
       margin: 0px 0px;
+    }
+    .btn {
+      width: 50%;
+      background-color: tomato;
+      font-size: 20px;
+      border-radius: 10px;
+      text-align: center;
+      padding: 10px;
+      box-sizing: border-box;
+      cursor: pointer;
+      margin-top: 10px;
     }
   }
 </style>
